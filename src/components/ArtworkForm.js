@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const ArtworkForm = ({getArtwork, setMessage}) => {
 
     const [ selectedDepartmentID, setSelectedDepartmentID ] = useState("");
-    const [ selectedDepartment, setSelectedDepartment ] = useState("");
+    const [ selectedDepartment, setSelectedDepartment ] = useState("Select one...");
     const [ keyword, setKeyword ] = useState("");
 
     function handleKeywordSubmit(e) {
@@ -35,25 +35,38 @@ const ArtworkForm = ({getArtwork, setMessage}) => {
         });
     }
 
-    function handleChange(e) {
+    function handleDepartmentChange(e) {
         setSelectedDepartmentID(e.target[e.target.selectedIndex].id);
         setSelectedDepartment(e.target.value);
+        setKeyword("");
+    }
+    function handleKeywordChange(e) {
+        setKeyword(e.target.value);
+        setSelectedDepartment("Select one...")
     }
 
     return (
-        <div className="artwork-form">
-            <div className="form-option">
+        <div className="artwork-form columns">
+            <div className="form-option box column">
                 <h3>SEARCH BY KEYWORD</h3>
                 <form onSubmit={handleKeywordSubmit}>
-                    <input type="text" placeholder="type a keyword..."></input>
+                    <input 
+                        type="text" 
+                        placeholder="type a keyword..."
+                        value={keyword}
+                        onChange={handleKeywordChange}>
+                        </input>
                     <input type="submit"></input>
                 </form> 
             </div>
-            <div className="form-option">
+            <div className="middle-word">
+                <h4>OR</h4>
+            </div>
+            <div className="form-option box column">
                 <h3>CHOOSE DEPARTMENT</h3>
                 <form onSubmit={handleDepartmentSubmit}>
-                    <select id={selectedDepartmentID} value={selectedDepartment} onChange={handleChange}>
-                        <option id="" disabled default>Select a department...</option>
+                    <select id={selectedDepartmentID} value={selectedDepartment} onChange={handleDepartmentChange}>
+                        <option id="" disabled default>Select one...</option>
                         <option id="1">American Art</option>
                         <option id="6">Asian Art</option>
                         <option id="5">African and South American Art</option>

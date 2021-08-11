@@ -27,14 +27,14 @@ code {
     monospace;
 }
 .metsearch-body {
-  width: 80%;
+  width: 90%;
   margin: 5% auto;
   padding: 3%;
   background-color:rgb(234, 239, 255);
   font-family: 'Lato', sans-serif
 }
 .artwork {
-  margin: 20% auto;
+  margin: 5% auto;
   padding: 2% 2 0%;
   text-align: center;
 }
@@ -56,17 +56,19 @@ code {
   text-align: center;
 }
 .artwork-form {
-  width: 100%;
+  width: 99%;
   margin: auto;
-  margin-top: 0px;
-  padding-top: 0px;
   text-align: center;
+}
+.artwork-form .box {
+  height: 40%;
 }
 .form-option {
   float: left;
-  margin: 4%;
-  /* padding: 5%; */
-  width: 40%;
+  width: 45%;
+}
+.middle-word {
+  margin: 2%;
 }
 .form-option input[type=text] {
   width: 65%;
