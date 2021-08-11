@@ -1,9 +1,13 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Artwork from './components/Artwork';
+import ArtworkForm from './components/ArtworkForm';
+import Title from './components/Title';
 
 function App() {
 
   const [ currentArtwork, setCurrentArtwork ] = useState({});
+  const [ message, setMessage ] = useState("");
 
   // Gets a default image with the query of flowers upon page load
   useEffect(() => {
@@ -11,6 +15,7 @@ function App() {
     .then(resp => resp.json())
     .then(data => {
         const randomIndex = Math.floor(Math.random() * (data.objectIDs.length)-1);
+        setMessage("Current keyword: FLOWERS");
         return data.objectIDs[randomIndex];
     })
     .then(artworkID => getArtwork(artworkID));
@@ -24,8 +29,10 @@ function App() {
   }
 
   return (
-    <div>
-      <Artwork artwork={currentArtwork} />
+    <div className="metsearch-body">
+      <Title />
+      <ArtworkForm getArtwork={getArtwork} setMessage={setMessage} />
+      <Artwork artwork={currentArtwork} message={message} />
     </div>
   );
 }

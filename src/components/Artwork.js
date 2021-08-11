@@ -1,10 +1,26 @@
 import React from 'react';
 
-const Artwork = ({name}) => {
+const Artwork = ({artwork, message}) => {
+
+    const artist = artwork.artistDisplayName ? `By ${artwork.artistDisplayName}` : "Unknown Artist";
+    const title = artwork.title;
+    const medium = artwork.medium;
+    const image = artwork.primaryImage;
+
 
     return (
         <div>
-            <h1>I'm an artwork by {name}</h1>
+            <div className="artwork box">
+                <h3 className="message">{message}</h3>
+                {console.log(artist)}
+                {console.log(artwork.artistDisplayName)}
+                {console.log(artwork)}
+
+                <h2>{title}</h2>
+                <h3>{artist}</h3>
+                <p>Medium: {medium}</p>
+                <img src={image} alt={title} />
+            </div>
         </div>
     )
 }
