@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Artwork from './components/Artwork';
 import ArtworkForm from './components/ArtworkForm';
 import Title from './components/Title';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -32,7 +33,8 @@ function App() {
     <div className="metsearch-body box">
       <Title />
       <ArtworkForm getArtwork={getArtwork} setMessage={setMessage} message={message}/>
-      <Artwork artwork={currentArtwork} message={message} />
+      <Artwork artwork={currentArtwork} message={message}/>
+      <Footer/>
     </div>
   );
 }

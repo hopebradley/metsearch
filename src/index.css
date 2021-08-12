@@ -57,8 +57,9 @@ code {
 }
 .artwork img {
   width: 50%;
+  max-height: 20%;
   display: block;
-  margin: 5% auto;
+  margin: 2% auto;
 }
 .title {
   width: 60%;
@@ -102,4 +103,10 @@ code {
 }
 .form-option select {
   width: 65%;
+}
+.footer {
+  text-align: center;
+  padding: 2%;
+  width: 75%;
+  margin: auto;
 }
