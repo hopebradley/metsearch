@@ -16,7 +16,7 @@ This will open the app on [http://localhost:3000](http://localhost:3000).
 
 # Using the App
 
-When MetSearch loads, there is both a search bar and a drop down menu. Choose one OR the other; unfortunately, they don't work together. When a keyword is submitted or an option from the menu is chosen, a random artwork from an array of keyword or department related artwork objects will be displayed below.
+When MetSearch loads, there is both a search bar and a drop down menu. When a keyword is submitted or an option from the menu is chosen, a random artwork from an array of keyword or department related artwork objects will be displayed below.
 
 The first artwork you see upon loading the application is a random piece related to flowers-- this is an example keyword.
 
@@ -32,7 +32,7 @@ The link to the Met's github page is here: https://github.com/metmuseum/
 
 # Contact Me
 
-## Hope Bradley
+### Hope Bradley
 Email: hope.e.bradley@gmail.com
 LinkedIn: https://www.linkedin.com/in/hopebradl3y/
 Blog: <a href="https://hopebradley.com">hopebradley.com</a>
