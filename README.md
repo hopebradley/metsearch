@@ -1,5 +1,5 @@
 
-Note: This app is a second iteration of another repository. This version is built with React, while the previous version was built with only simple JavaScript and HTML. You can view the original project and its commits [https://github.com/hopebradley/project-phase1](here).
+Note: This app is a second iteration of another repository. This version is built with React, while the previous version was built with only simple JavaScript and HTML. You can view the original project and its commits [here](https://github.com/hopebradley/project-phase1).
 
 # MetSearch
 
@@ -33,6 +33,6 @@ The link to the Met's github page is here: https://github.com/metmuseum/
 # Contact Me
 
 ### Hope Bradley
-Email: hope.e.bradley@gmail.com
-LinkedIn: https://www.linkedin.com/in/hopebradl3y/
-Blog: <a href="https://hopebradley.com">hopebradley.com</a>
+[LinkedIn](https://www.linkedin.com/in/hopebradl3y)
+
+[Blog](hopebradley.com)
