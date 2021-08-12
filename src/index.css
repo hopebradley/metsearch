@@ -28,7 +28,7 @@ code {
     monospace;
 }
 .metsearch-body {
-  width: 90%;
+  width: 75%;
   margin: 5% auto;
   padding: 3%;
   background-color:rgb(234, 239, 255);
@@ -52,6 +52,8 @@ code {
   color: white;
   width: 50%;
   margin: auto;
+  padding: 1%;
+  font-weight: 900;
 }
 .artwork img {
   width: 50%;
@@ -74,12 +76,29 @@ code {
 .form-option {
   float: left;
   width: 45%;
+  background-color:rgb(242, 245, 255);
+  border-style:inset;
+  border-width: 5px;
+  border-color:rgb(61, 205, 205);
 }
 .middle-word {
   margin: 2%;
 }
+.form-option input,select {
+  height: 35px;
+  border-radius: 10px;
+  border-style:solid;
+  padding: 2%;
+  border-width: 2px;
+  border-color:rgb(180, 210, 233);
+}
 .form-option input[type=text] {
   width: 65%;
+}
+.form-option input[type=submit] {
+  width: 20%;
+  height: 35px;
+  margin-left: 1%;
 }
 .form-option select {
   width: 65%;

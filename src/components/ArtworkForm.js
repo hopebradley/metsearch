@@ -57,7 +57,7 @@ const ArtworkForm = ({getArtwork, setMessage, message}) => {
                             value={keyword}
                             onChange={handleKeywordChange}>
                             </input>
-                        <input type="submit"></input>
+                        <input className="button is-success is-light is-outlined" value="GO" type="submit"></input>
                     </form> 
                 </div>
                 <div className="middle-word">
@@ -79,7 +79,7 @@ const ArtworkForm = ({getArtwork, setMessage, message}) => {
                             <option id="21">Modern Art</option>
                             <option id="19">Photographs</option>
                         </select>
-                        <input type="submit" value="Search"></input>
+                        <input className="button is-success is-light is-outlined" type="submit" value="GO"></input>
                     </form>
                     
                 </div>
