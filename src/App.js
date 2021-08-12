@@ -29,9 +29,9 @@ function App() {
   }
 
   return (
-    <div className="metsearch-body">
+    <div className="metsearch-body box">
       <Title />
-      <ArtworkForm getArtwork={getArtwork} setMessage={setMessage} />
+      <ArtworkForm getArtwork={getArtwork} setMessage={setMessage} message={message}/>
       <Artwork artwork={currentArtwork} message={message} />
     </div>
   );

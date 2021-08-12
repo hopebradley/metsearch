@@ -2,7 +2,7 @@ import React from 'react';
 
 const Artwork = ({artwork, message}) => {
 
-    const artist = artwork.artistDisplayName ? `By ${artwork.artistDisplayName}` : "Unknown Artist";
+    const artist = artwork.artistDisplayName ? `By: ${artwork.artistDisplayName}` : "Unknown Artist";
     const title = artwork.title;
     const medium = artwork.medium;
     const image = artwork.primaryImage;
@@ -11,7 +11,7 @@ const Artwork = ({artwork, message}) => {
         return (
             <div>
                 <div className="artwork box">
-                    <h3 className="message">{message}</h3>
+                    
                     {console.log(artist)}
                     {console.log(artwork.artistDisplayName)}
                     {console.log(artwork)}
